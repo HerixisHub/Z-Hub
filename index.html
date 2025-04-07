@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z-Hub</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            overflow-x: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mod {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .mod-header {
+            background-size: cover;
+            background-position: center;
+            height: 160px;
+        }
+
+        .mod-body {
+            padding: 15px;
+        }
+
+        .mod-body h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .mod-body p {
+            margin: 0;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .buttons-container {
+            padding: 10px;
+        }
+
+        .install-btn, .info-btn {
+            background: none;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: auto;
+            transition: all 0.3s;
+            width: auto;
+        }
+
+        .install-btn:hover, .info-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        a {
+            text-decoration: none;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mod" data-name="Plants vs. Zombies" data-category="Content creation">
+            <div class="mod-header" style="background-image: url('PvZBanner.png');"></div>
+            <div class="mod-body">
+                <h3>Plants vs. Zombies</h3>
+                <p>A strategic game where players use plants to defend against zombie attacks.</p>
+            </div>
+            <div class="buttons-container">
+                <a href="https://www.xbox.com/ru-RU/games/store/plants-vs-zombies/BR1D9CR82ZM8" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+        </div>
+        <div class="mod" data-name="Plants vs. Zombies Fusion" data-category="Content creation">
+            <div class="mod-header" style="background-image: url('FusionBanner.png');"></div>
+            <div class="mod-body">
+                <h3>Plants vs. Zombies Fusion</h3>
+                <p>Gives the ability to create your own hybrids. Made with Unity.</p>
+            </div>
+            <div class="buttons-container">
+                <a href="https://space.bilibili.com/3546619314178489/dynamic" download>
+                    <button class="install-btn">Download</button>
+                </a>
+                <a href="ModsFusion.html">
+                    <button class="install-btn">Mods</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

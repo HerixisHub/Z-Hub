@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #181818;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .topbar {
+            background-color: #121212;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #2c2c2c;
+        }
+        .topbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .topbar a:hover {
+            color: #ddd;
+        }
+        .topbar img {
+            width: 20px;
+            height: 20px;
+            margin-right: 16px;
+            vertical-align: middle;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            flex-grow: 1;
+        }
+        .mod {
+            background-color: #242424;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            transition: background-color 0.3s, transform 0.3s;
+            opacity: 1;
+        }
+        .mod-header {
+            width: 100px;
+            height: 60px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+        }
+        .mod-body {
+            flex-grow: 1;
+            padding-left: 15px;
+        }
+        .mod-body h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .mod-body p {
+            font-size: 14px;
+            color: #bbb;
+            margin: 5px 0;
+        }
+        .sidebar {
+            width: 300px;
+            background: #242424;
+            padding: 15px;
+            border-radius: 6px;
+            margin-left: auto;
+        }
+        .search-box {
+            width: 93%;
+            padding: 10px;
+            background: #333;
+            border: 1px solid #555;
+            color: white;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 14px;
+        }
+        .modern-checkbox {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #888;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            margin-right: 10px;
+            vertical-align: middle;
+            transition: background-color 0.3s;
+        }
+        .modern-checkbox:checked {
+            background-color: white;
+        }
+        .modern-checkbox-label {
+            display: inline-block;
+            font-size: 14px;
+            color: white;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        button {
+            background: none;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: auto;
+            transition: all 0.3s;
+        }
+        button:hover {
+            border-color: #bbb;
+            background-color: #444;
+            color: #ddd;
+            transform: scale(0.95);
+        }
+        .install-btn {
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .install-btn:hover {
+            background-color: #444;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+        <div class="topbar" style="background-color: #242424; margin-bottom: 20px; border-radius: 5px;">
+        <a href="index.html" style="color: #00000; border-radius: 3px;">
+            <img src="ArrowIcon.png" alt="Back">
+            Catalog
+        </a>
+    </div>
+    <div class="container">
+        <div class="catalog">
+            <div class="mod" data-name="CuLib" data-category="Content creation">
+                <div class="mod-header" style="background-image: url('CuLibBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>CuLib</h3>
+                    <p>Gives the ability to create your own hybrids.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/CuLib.01.04.2025.zip" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Menu Cheat" data-category="Console, Gameplay">
+                <div class="mod-header" style="background-image: url('MenuCheatsBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Menu Cheat</h3>
+                    <p>Plant, currency mods, and console.</p>
+                </div>
+                <a href="https://github.com/Yurikia/PVZ-Menu-Cheat/releases/download/PvzFusion(2.3.1)b/PVZ.Fussion.Ch.2.1b.rar" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Multi Language" data-category="Translations">
+                <div class="mod-header" style="background-image: url('Multi-LanguageBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Multi Language</h3>
+                    <p>Game translation into multiple languages.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Plants.vs.Zombies.Fusion.-.2.3.1.Version.2.Multi-Language.PC.by.the.Blooms.Community.zip" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Gods" data-category="New Hybrids, Modpack">
+                <div class="mod-header" style="background-image: url('GodsBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Gods</h3>
+                    <p>The modpack adds powerful new divine hybrids.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Gods.zip" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Infinite75 Plants" data-category="New Hybrids">
+                <div class="mod-header" style="background-image: url('CustomPlants-Infinite75Banner.png');"></div>
+                <div class="mod-body">
+                    <h3>Infinite75 Plants</h3>
+                    <p>Compatible with Multi-Language 2.3.1. New Plants.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/PVZRH2.3.1.ML+INFINITE75.zip" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Persik-Fusion V4.1" data-category="New Hybrids, Modpack, Console, Translations">
+                <div class="mod-header" style="background-image: url('CustomPlants-TtpersikBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Persik-Fusion V4.1</h3>
+                    <p>New plants, translation, and improvements.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/PVZ_FUSION_NEW_PLANT_V4.1.zip" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Better Pot Fusion" data-category="Gameplay">
+                <div class="mod-header" style="background-image: url('Better_Pot_FusionBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Better Pot Fusion</h3>
+                    <p>The mod lets you use Odyssey fusions anywhere.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Better_Pot_Fusion.dll" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Better Pumpkin Fusion" data-category="New Hybrids">
+                <div class="mod-header" style="background-image: url('BetterPumpkinFusionBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Better Pumpkin Fusion</h3>
+                    <p>Fuse with any pumpkin, no matter what's inside.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Better_Pumpkin_Fusion.dll" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Odyssey Buffs" data-category="Gameplay">
+                <div class="mod-header" style="background-image: url('OdysseyBuffsBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Odyssey Buffs</h3>
+                    <p>Odyssey merge mod, no code edit, customizable.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Odyssey_Buffs.dll" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Utilities" data-category="Console, Gameplay">
+                <div class="mod-header" style="background-image: url('UtilitiesBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Utilities</h3>
+                    <p>The mod includes many toggleable features.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Utilities.dll" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="ModPack by xyz" data-category="New Hybrids, Modpack">
+                <div class="mod-header" style="background-image: url('ModPackbyxyzBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>ModPack by xyz</h3>
+                    <p>The build includes many new hybrids.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Utilities.dll" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="Better Game Speed" data-category="Gameplay">
+                <div class="mod-header" style="background-image: url('FusionBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>Better Game Speed</h3>
+                    <p>Allows you to pause the game.</p>
+                </div>
+                <a href="https://github.com/HerixisHub/Fusion-Hub-Mods/releases/download/CuLib/Better_Game_Speed.dll" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="MelonLoader" data-category="Content creation">
+                <div class="mod-header" style="background-image: url('MelonLoaderBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>MelonLoader</h3>
+                    <p>MelonLoader is a mod loader for Unity games.</p>
+                </div>
+                <a href="https://github.com/LavaGang/MelonLoader/releases/download/v0.7.0/MelonLoader.Installer.exe" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+            <div class="mod" data-name="BepInEx" data-category="Content creation">
+                <div class="mod-header" style="background-image: url('BepInExBanner.png');"></div>
+                <div class="mod-body">
+                    <h3>BepInEx</h3>
+                    <p>BepInEx is a mod loader for Unity games.</p>
+                </div>
+                <a href="https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x64_5.4.23.2.zip" download>
+                    <button class="install-btn">Download</button>
+                </a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <input type="text" class="search-box" placeholder="Search..." onkeyup="searchMods()">
+            <h4>Tags</h4>
+            <label class="modern-checkbox-label">
+                <input type="checkbox" class="modern-checkbox" value="Content creation" onclick="filterMods()">Content creation
+            </label><br>
+            <label class="modern-checkbox-label">
+                <input type="checkbox" class="modern-checkbox" value="New Hybrids" onclick="filterMods()">New Hybrids
+            </label><br>
+            <label class="modern-checkbox-label">
+                <input type="checkbox" class="modern-checkbox" value="Translations" onclick="filterMods()">Translations
+            </label><br>
+            <label class="modern-checkbox-label">
+                <input type="checkbox" class="modern-checkbox" value="Modpack" onclick="filterMods()">Modpack
+            </label><br>
+            <label class="modern-checkbox-label">
+                <input type="checkbox" class="modern-checkbox" value="Gameplay" onclick="filterMods()">Gameplay
+            </label><br>
+            <label class="modern-checkbox-label">
+                <input type="checkbox" class="modern-checkbox" value="Console" onclick="filterMods()">Console
+            </label><br>
+        </div>
+    </div>
+    <script>
+        function searchMods() {
+            let input = document.querySelector('.search-box').value.toLowerCase();
+            document.querySelectorAll('.mod').forEach(mod => {
+                let name = mod.getAttribute('data-name').toLowerCase();
+                mod.style.opacity = name.includes(input) ? '1' : '0.5';
+            });
+        }
+
+        function filterMods() {
+            let selectedCategories = Array.from(document.querySelectorAll('.modern-checkbox:checked')).map(cb => cb.value);
+            document.querySelectorAll('.mod').forEach(mod => {
+                let categories = mod.getAttribute('data-category').split(', ').map(cat => cat.trim());
+                let isVisible = selectedCategories.length === 0 || selectedCategories.some(cat => categories.includes(cat));
+                mod.style.opacity = isVisible ? '1' : '0.5';
+            });
+        }
+    </script>
+</body>
+</html>
