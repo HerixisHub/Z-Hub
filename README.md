@@ -1,5 +1,7 @@
 # Z-Hub: A Hub for Custom Plants vs. Zombies Versions and Mods
 
+images/ArrowIcon.webp
+
 Welcome to Z-Hub, the ultimate collection of fan-made Plants vs. Zombies versions and mods. This repository serves as a comprehensive hub for custom builds, mod packs, and detailed setup guides for PvZ enthusiasts. Whether you're looking for unique gameplay experiences, additional features, or compatibility notes, you'll find it all here!
 
 Features:
