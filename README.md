@@ -18,7 +18,7 @@ Join the PvZ modding community and elevate your gameplay with Z-Hub!
 
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/HerixisHub/Z-Hub/refs/heads/main/images/logo.webp" width="200">
+    <img src="https://raw.githubusercontent.com/HerixisHub/Z-Hub/refs/heads/main/images/logo.webp" width="500">
 </p>
 
 # BepInEx
