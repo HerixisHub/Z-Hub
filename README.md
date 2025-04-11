@@ -21,7 +21,9 @@ Join the PvZ modding community and elevate your gameplay with Z-Hub!
     <img src="https://raw.githubusercontent.com/HerixisHub/Z-Hub/refs/heads/main/images/logo.webp" width="500">
 </p>
 
-# BepInEx
+# BepInEx <p align="left">
+    <img src="https://raw.githubusercontent.com/HerixisHub/Z-Hub/refs/heads/main/images/logo.webp" width="500">
+</p>
 
 ![Github All Releases](https://img.shields.io/github/downloads/bepinex/bepinex/total.svg)
 ![GitHub release](https://img.shields.io/github/release/bepinex/bepinex.svg)
