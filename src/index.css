@@ -1,0 +1,208 @@
+        body {
+            background-color: #1e1e1e;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            overflow-x: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mod {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .mod-header {
+            background-size: cover;
+            background-position: center;
+            height: 160px;
+        }
+
+        .mod-body {
+            padding: 15px;
+        }
+
+            .mod-body h3 {
+                margin: 0 0 10px 0;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            .mod-body p {
+                margin: 0;
+                font-size: 14px;
+                color: #ccc;
+            }
+
+        .sidebar {
+            width: 300px;
+            background: #242424;
+            padding: 15px;
+            border-radius: 6px;
+            margin-left: auto;
+        }
+
+            .sidebar h4 {
+                margin-bottom: 6px;
+            }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+            .checkbox-group label {
+                display: block;
+                margin-top: 4px;
+            }
+
+        .search-box {
+            width: 93%;
+            padding: 10px;
+            background: #333;
+            border: 1px solid #555;
+            color: white;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .modern-checkbox {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #888;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            margin-right: 10px;
+            vertical-align: middle;
+            transition: background-color 0.3s;
+        }
+
+            .modern-checkbox:checked {
+                background-color: white;
+            }
+
+        .modern-checkbox-label {
+            display: inline-block;
+            font-size: 14px;
+            color: white;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        .buttons-container {
+            padding: 10px;
+        }
+
+        .install-btn, .info-btn {
+            background: none;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: auto;
+            transition: all 0.3s;
+            width: auto;
+        }
+
+            .install-btn:hover, .info-btn:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+        a {
+            text-decoration: none;
+            width: 100%;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 20px;
+                overflow-x: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 20px;
+                overflow-x: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                overflow-x: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                overflow-x: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                overflow-x: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                overflow-x: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                overflow-x: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
